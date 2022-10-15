@@ -45,15 +45,15 @@ default-sp -
  'NameIDFormat' => 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
 'simplesaml.nameidattribute' => 'eduPersonTargetedID',
 - save the authsources.php and close the file
-step 6: test the auth using provided authentication tab 
+- step 6: test the auth using provided authentication tab 
 use the link - default-sp
-step 7: likely will receive on error on the test page
+- step 7: likely will receive on error on the test page
 take the Reply URL and add to azure
 In the Azure Management portal, find the application, scroll to Single Sign-On and add it to the list of Reply URLs.
 and save
-step 8: test again and it should work, will be shown  the azure microsoftonline Sign in page
-step 9: you will be redirected to SimpleSAMLphp
-step 10: strictly recommended to change config.php - for... add salt, admin password change for simplesaml gui , enable modules, email notifications, 
+- step 8: test again and it should work, will be shown  the azure microsoftonline Sign in page
+- step 9: you will be redirected to SimpleSAMLphp
+- step 10: strictly recommended to change config.php - for... add salt, admin password change for simplesaml gui , enable modules, email notifications, 
 
 
 
