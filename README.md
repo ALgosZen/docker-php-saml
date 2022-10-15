@@ -18,7 +18,7 @@ https://simplesamlphp.org/docs/1.17/simplesamlphp-install.html
 instructions found below:
 https://www.lewisroberts.com/2015/09/05/single-sign-on-to-azure-ad-using-simplesamlphp/
 
-step 1. setup SAML Azure AD SSO for your PHP web application using SimpleSAMLphp
+- step 1. setup SAML Azure AD SSO for your PHP web application using SimpleSAMLphp
 In the app registrations in Azure AD, select your app and click on endpoints. Copy the Federation metadata document. The federation metadata should be imported to your application.
 
 The Identifier, Reply URL and Sign on URL should be configured in the Azure AD.
@@ -32,10 +32,10 @@ You can use the additional reply URL fields to specify multiple reply URLs. For 
 
 If you are using SimpleSAMLphp, the reply URL should be similar to https://<domain_name>/app/module.php/saml/sp/metadata.php/default-sp
 
-step 2. save the metadata from azure
-step 3. open simplesamlphp web interface , visit federation tab and use the tool 'XML to simplesaml metadata converter'
-step 4. copy the converted content to the folder 'metadata' under simplesamlphp - eg: save it as saml20-idp-remote.php
-step 5 . open config folder -> authsources.php
+- step 2. save the metadata from azure
+- step 3. open simplesamlphp web interface , visit federation tab and use the tool 'XML to simplesaml metadata converter'
+- step 4. copy the converted content to the folder 'metadata' under simplesamlphp - eg: save it as saml20-idp-remote.php
+- step 5 . open config folder -> authsources.php
 edit the commented section  
 default-sp - 
  - change the entityID value to reflect the name or URL of your app domain
